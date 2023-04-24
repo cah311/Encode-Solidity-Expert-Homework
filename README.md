@@ -1,4 +1,4 @@
-# Encode-Solidity-Expert-Lecture1-Homework
+Lecture1-Homework
 ## Blockchain
 
 1. Why is client diversity important for Ethereum?
