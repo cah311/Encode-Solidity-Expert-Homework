@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.6;
 
-contract Homework6 {
+contract Question1 {
     uint public balanceSentInConstructor;
     // This line lets us add some Ether to this contract at deployment
     constructor() payable {
