@@ -1,0 +1,15 @@
+    1. the startPayout event doesnt return any information when triggered 
+    2. there should be a require here. This will send a message if the requirements arent met 
+    3. With the current structure, the msg.sender can call the function, not be added to the array
+       but still increase the overall player amount. 
+    4. does not emit anything
+    5. function is never called and there are no requirements for being a winner
+    6. There is nothing calling this function to check the current balance of the contract. 
+       At the current state, this contract wont be called
+    7. This function currently pays out the inputed amount to every member of the winners array 
+       so long as the iterator doesnt exceed the length. Currently, there was noting adding any winners 
+       to this array so it would fail since it is trying to send to a non existant address in an empty array
+       If there were addresses in the array, there should be a check/ require statement to ensure that payments
+       dont exceed what is available in the function. 
+    8. Right now, there is no function for the creator of the contract to withdraw the remaining funds after
+       a payout has taken place
